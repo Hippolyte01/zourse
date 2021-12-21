@@ -1,0 +1,62 @@
+:root {
+    --background : rgb(216, 216, 216);
+    --menu : rgb(28, 28, 104);
+    --focus : rgb(18,18,68);
+}
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Menu */
+
+header {
+    background-color: var(--menu);
+    padding: 1em 1em;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.titre {
+    margin: 0 auto;
+    color: var(--background);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.nav {
+    margin: auto 0;
+    line-height: 0;
+    text-decoration: none;
+    color: var(--background);
+    font-weight: bold;
+}
+
+.nav::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    top: 0;
+    left: 0;
+    border-top: 1px solid var(--background);
+    border-left: 1px solid var(--background);
+}
+
+/* Page */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    font-size: 5em;
+    font-weight: bolder;
+}
